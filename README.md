@@ -14,8 +14,8 @@ This repository is divided into two main stages of database engineering:
 ### Stage 1 — Conceptual Modeling (`ERM`)
 * ₊˚⊹ **Domain:** Corporate Industrial Management System (`Projects`, `Employees`, `Departments`, `Parts`, `Warehouses`, and `Suppliers`).
 * ₊˚⊹ **Artifacts:** Entity-Relationship Diagram defining entities, composite/multivalued attributes, cardinalities (`1:N`, `N:N`), Primary Keys (`PK`), and Foreign Keys (`FK`).
-* ₊˚⊹ **Diagram:** *(Upload your ERM image as `mer-diagram.png` to display it below)*
-![Entity-Relationship Model](mer-diagram.png)
+* ₊˚⊹ **Diagram:** *
+* ![Entity-Relationship Model](mer-diagram.jpg)
 
 ### Stage 2 — Physical Implementation (`MySQL`)
 * ₊˚✧ **Domain:** IT Technical Assistance & Service Order Management (`Empresa` database).
