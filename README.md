@@ -15,7 +15,7 @@ This repository is divided into two main stages of database engineering:
 * ₊˚⊹ **Domain:** Corporate Industrial Management System (`Projects`, `Employees`, `Departments`, `Parts`, `Warehouses`, and `Suppliers`).
 * ₊˚⊹ **Artifacts:** Entity-Relationship Diagram defining entities, composite/multivalued attributes, cardinalities (`1:N`, `N:N`), Primary Keys (`PK`), and Foreign Keys (`FK`).
 * ₊˚⊹ **Diagram:** *
-* ![Entity-Relationship Model](mer-diagram.jpg)
+* ![Entity-Relationship Model](mer.diagram.jpg)
 
 ### Stage 2 — Physical Implementation (`MySQL`)
 * ₊˚✧ **Domain:** IT Technical Assistance & Service Order Management (`Empresa` database).
