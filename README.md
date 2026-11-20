@@ -41,6 +41,8 @@ Reúne duas etapas de banco de dados: o desenho conceitual de um sistema de gest
 - **População e consultas:** Carga de clientes, técnicos, serviços e ordens (concluídas e em aberto/andamento), seguida de consultas analíticas de acompanhamento e faturamento.
 <p align="center">─────────────────────── · ───────────────────────</p>
 
+<p align="center">─────────────────────── · ───────────────────────</p>
+
 ### ✦ Como Executar
 
 1. **Pré-requisitos:** Tenha o **MySQL Server** (ou cliente MySQL) instalado e em execução.
@@ -49,9 +51,9 @@ Reúne duas etapas de banco de dados: o desenho conceitual de um sistema de gest
    git clone [https://github.com/Madoard/sql-relational-database-modeling.git](https://github.com/Madoard/sql-relational-database-modeling.git)
    cd sql-relational-database-modeling
    ```
-3. **Execute o script SQL (`database_service_orders.sql`):**
+3. **Execute o script SQL (`serviço-de-ordens-do-banco-de-dados.sql`):**
    ```bash
-   mysql -u seu_usuario -p < database_service_orders.sql
+   mysql -u seu_usuario -p < serviço-de-ordens-do-banco-de-dados.sql
    ```
 
 ### ✦ Exemplo de Uso
@@ -88,16 +90,16 @@ Reúne duas etapas de banco de dados: o desenho conceitual de um sistema de gest
 
 ### ✦ Como Foi Construído
 
-- **Modelagem Conceitual (`MER`):** Definição das entidades, atributos, cardinalidades (`1:N` e `N:N`), chaves primárias (`PK`) e chaves estrangeiras (`FK`) no diagrama conceitual (`mer.diagram.jpg`).
-- **Estrutura e Carga em MySQL (`DDL` e `DML`):** Criação do banco `Empresa` e das tabelas `Tecnico`, `Cliente`, `Servico`, `Finalizacao`, `OrdemServico` e `OrdemServico_Servico` em [`database_service_orders.sql`](./database_service_orders.sql), com restrições `NOT NULL`, `ENUM`, `AUTO_INCREMENT`, chaves estrangeiras e inserts iniciais.
+- **Modelagem Conceitual (`MER`):** Definição das entidades, atributos, cardinalidades (`1:N` e `N:N`), chaves primárias (`PK`) e chaves estrangeiras (`FK`) no diagrama conceitual (`mer.diagrama.jpg`).
+- **Estrutura e Carga em MySQL (`DDL` e `DML`):** Criação do banco `Empresa` e das tabelas `Tecnico`, `Cliente`, `Servico`, `Finalizacao`, `OrdemServico` e `OrdemServico_Servico` em [`serviço-de-ordens-do-banco-de-dados.sql`](./serviço-de-ordens-do-banco-de-dados.sql), com restrições `NOT NULL`, `ENUM`, `AUTO_INCREMENT`, chaves estrangeiras e inserts iniciais.
 - **Consultas Analíticas (`DQL`):** Elaboração de consultas com `COUNT`, `WHERE`, `ORDER BY`, `JOIN`, `GROUP BY` e `SUM` para contagem de serviços, listagem de ordens abertas, cálculo de subtotais e consolidação do valor por ordem de serviço.
 
 ### ✦ Arquivos do Repositório
 
 | Arquivo | Descrição |
 | :--- | :--- |
-| [`database_service_orders.sql`](./database_service_orders.sql) | Script completo em MySQL com criação do banco/tabelas (`DDL`), inserção de dados (`DML`) e consultas (`DQL`) |
-| [`mer.diagram.jpg`](./mer.diagram.jpg) | Diagrama Conceitual Entidade-Relacionamento (`MER`) |
+| [`serviço-de-ordens-do-banco-de-dados.sql`](./serviço-de-ordens-do-banco-de-dados.sql) | Script completo em MySQL com criação do banco/tabelas (`DDL`), inserção de dados (`DML`) e consultas (`DQL`) |
+| [`mer.diagrama.jpg`](./mer.diagrama.jpg) | Diagrama Conceitual Entidade-Relacionamento (`MER`) |
 
 <br/>
 
